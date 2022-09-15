@@ -1,10 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import ArrayListComponent from './components/ArrayListComponent';
+import FetchListComponent from './components/FetchListComponent';
+import FlatListComponent from './components/FlatListComponent';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <ArrayListComponent/>
+      <FetchListComponent/>
+      <FlatListComponent/>
       <StatusBar style="auto" />
     </View>
   );
